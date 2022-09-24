@@ -28,8 +28,6 @@ background: #FFE17F;
   grid-column-start: 1;
   grid-column-end: 2;
   column-gap: 1px;
-  background: #FFE17F;
-  color: #FFE17F;
   margin-top: -20px;
   margin-left: 60px;
   }
@@ -118,8 +116,7 @@ font-family: 'Rubik';
 }
 /*Корзина*/
 .input_submit{
-
-  font-style: normal;
+font-style: normal;
 font-weight: 400;
 font-size: 18px;
 line-height: 30px;
@@ -132,6 +129,4 @@ height: 30px;
 
 padding:0;
 margin-left: 45px;
-
-
 }
