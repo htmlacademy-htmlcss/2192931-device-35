@@ -1,36 +1,137 @@
 
 /*body*/
-.body{
-position: absolute;
+.header{
+display: grid;
+grid-template-columns:  480px 240px 240px 240px 240px;
+grid-template-rows: 150px 150px 150px 150px 150px;
 width: 1440px;
 height: 750px;
-left: 0;
-top: 0;
+margin:0;
 background: #FFFFFF;
 }
 
 /*header*/
 .header_wrapper{
-  width: 1160px;
-  height: 300px;
-  background: #FFE17F;
-  margin-top: 40px;
-  margin-left: 140px;
-  margin-right: 140px;
+width: 1160px;
+height: 300px;
+margin-left: 140px;
+margin-top: 40px;
+margin-right: 140px;
+background: #FFE17F;
   }
 
   .header_logo{
-  position: absolute;
-  top: 20px;
-  left: 200px;
+  width: 145px;
+  height:36px;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  column-gap: 1px;
+  background: #FFE17F;
+  color: #FFE17F;
+  margin-top: -20px;
+  margin-left: 60px;
   }
 
-  /*Точка над буквой I*/
-  .vector{
-    position: absolute;
-    left: 57.56%;
-    right: 37.2%;
-    top: 0%;
-    bottom: 71.94%;
+  .header_menu{
+  width: 1046px;
+  height: 40px;
+padding-top: 46px;
+padding-left: 60px;
+padding-right: 46px;
+padding-bottom: 214px;
+
 
   }
+
+  /*поиск по сайту*/
+  .search_form{
+    padding-left: 48px;
+
+    width: 359px;
+    height: 40px;
+    border-radius: 50px 0 0 50px;
+    margin-top: 46px;
+    background: #FFE17F;
+    border: 2px solid #000000;
+    font-size: 18px;
+    font-family: 'Rubik';
+
+    margin: 0;
+
+  }
+
+  /*найти*/
+  .search_form_submit{
+    width:160px;
+    height:40px;
+    font-size: 18px;
+    font-weight: 400;
+
+    border: 2px solid #000000;
+    border-radius: 0 50px 50px 0;
+    background: #FFE17F;
+    font-family: 'Rubik';
+
+
+    margin-left: -6px;
+    padding: 0;
+
+  }
+
+  /* Войти */
+  .form_submit{
+
+   width: 56px;
+   height:30px;
+
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 30px;
+   color: #000000;
+   font-family: 'Rubik';
+
+   background: #FFE17F;
+   border: none;
+
+   margin-left: 55px;
+
+  }
+/*Сравнить*/
+  .form_submit_button{
+  width:83px;
+  height: 30px;
+
+  padding: 0;
+  margin-left: 198px;
+
+
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+border: none;
+background: #FFE17F;
+font-family: 'Rubik';
+}
+/*Корзина*/
+.input_submit{
+
+  font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+border: none;
+background: #FFE17F;
+font-family: 'Rubik';
+
+width: 74px;
+height: 30px;
+
+padding:0;
+margin-left: 45px;
+
+
+}
