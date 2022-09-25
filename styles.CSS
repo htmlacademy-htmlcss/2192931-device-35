@@ -33,14 +33,26 @@ background: #FFE17F;
   }
 
   .header_menu{
-  width: 1046px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  width: 1055px;
   height: 40px;
-padding-top: 46px;
+padding-top: 50px;
 padding-left: 60px;
 padding-right: 46px;
 padding-bottom: 214px;
 
 
+
+  }
+
+  /*лупа поиска*/
+  .header_img_picture{
+  position: absolute;
+  left: 220px;
+  top: 125px;
+  margin: 0;
   }
 
   /*поиск по сайту*/
@@ -50,13 +62,13 @@ padding-bottom: 214px;
     width: 359px;
     height: 40px;
     border-radius: 50px 0 0 50px;
-    margin-top: 46px;
+    margin-top: 0;
     background: #FFE17F;
     border: 2px solid #000000;
     font-size: 18px;
     font-family: 'Rubik';
 
-    margin: 0;
+
 
   }
 
@@ -78,10 +90,14 @@ padding-bottom: 214px;
 
   }
 
+  /*фигурка*/
+  .header_menu_picture{
+  margin-left: 27px;
+  }
+
   /* Войти */
   .form_submit{
-
-   width: 56px;
+   width: 58px;
    height:30px;
 
    font-style: normal;
@@ -94,17 +110,16 @@ padding-bottom: 214px;
    background: #FFE17F;
    border: none;
 
-   margin-left: 55px;
-
+   margin-left: 13px;
   }
+
 /*Сравнить*/
-  .form_submit_button{
-  width:83px;
-  height: 30px;
+.form_submit_button{
+width:83px;
+height: 30px;
 
-  padding: 0;
-  margin-left: 198px;
-
+padding: 0;
+margin-left: 12px;
 
 font-style: normal;
 font-weight: 400;
@@ -114,6 +129,34 @@ border: none;
 background: #FFE17F;
 font-family: 'Rubik';
 }
+
+/*Шкала*/
+.img_picture{
+margin-left: 176px;
+}
+
+.menu_picture{
+margin-left: 1px;
+}
+/*количество*/
+.number_picture{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+width: 21px;
+height: 21px;
+background: #FFFFFF;
+border-radius: 50%;
+padding: 0;
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+margin-left: 18px;
+}
+
 /*Корзина*/
 .input_submit{
 font-style: normal;
@@ -128,5 +171,83 @@ width: 74px;
 height: 30px;
 
 padding:0;
-margin-left: 45px;
+margin-left: 12px;
+margin-right:40px;
+}
+
+/*Навигация*/
+.navigation-list{
+width: 1040px;
+height: 50px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: end;
+flex-wrap: nowrap;
+gap: 47px;
+
+margin-top:-190px;
+margin-right: 50px;
+
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 21px;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: #000000;
+list-style-type:none;
+text-decoration: none;
+}
+
+/*ссылки*/
+.header_link{
+  text-decoration: none;
+  color: #000000;
+}
+
+/*каталог*/
+.header_link_list{
+  position:absolute;
+  left:210px;
+  top:191px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.ellipse{
+  position:absolute;
+  left:450px;
+}
+
+/*квадракоптер*/
+.header-slider{
+grid-row-start: 3;
+grid-row-end: 4;
+grid-column-start: 1;
+grid-column-end: 2;
+margin-left:140px;
+margin-top:-110px;
+}
+
+/*число 01*/
+.header-number{
+
+  width: 250px;
+  height: 135px;
+color: #FFFFFF;
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 700;
+font-size: 180px;
+line-height: 30px;
+
+margin-top: 219px;
+margin-right: 200px;
+
+
+
 }
