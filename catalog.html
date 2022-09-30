@@ -8,8 +8,7 @@
     </head>
 <body class="body">
     <header class="header">
-    <p class="visually-hidden">Логотип "DEVICE"</p>
-    <img class="logo" src="#" alt="Логотип «DEVICE».">
+        <a class="logo-link"><img class="logo" src="#" alt="Логотип «DEVICE»."></a>
     <!-- Навигация -->
         <nav class="navigation">
             <ul class="navigation-list">
@@ -51,24 +50,24 @@
                 <legend class="catalog-filter-color">Цвет</legend>
                 <ul class="catalog-filter-list">
                     <li class="catalog-filter-item"><label class="control">
-                    <input class="control-input" type="radio" name="Черный" checked>Черный</label></li>
+                    <input class="control-input" type="checkbox" name="Черный" checked>Черный</label></li>
                     <li class="catalog-filter-item"><label class="control">
-                    <input class="control-input" type="radio" name="Белый" checked>Белый</label></li>
+                    <input class="control-input" type="checkbox" name="Белый" checked>Белый</label></li>
                     <li class="catalog-filter-item"><label class="control">
-                    <input class="control-input" type="radio" name="Синий">Синий</label></li>
+                    <input class="control-input" type="checkbox" name="Синий">Синий</label></li>
                     <li class="catalog-filter-item"><label class="control">
-                    <input class="control-input" type="radio" name="Красный">Красный</label></li>
+                    <input class="control-input" type="checkbox" name="Красный">Красный</label></li>
                     <li class="catalog-filter-item"><label class="control">
-                    <input class="control-input" type="radio" name="Розовый">Розовый</label></li>
+                    <input class="control-input" type="checkbox" name="Розовый">Розовый</label></li>
                 </ul>
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-bluetooth">Bluetooth</legend>
                 <ul class="catalog-filter-list">
                     <li class="catalog-filter-item"><label class="control">
-                    <input class="control-input" type="checkbox" name="Есть" checked>Есть</label></li>
+                    <input class="control-input" type="radio" name="Есть" checked>Есть</label></li>
                     <li class="catalog-filter-item"><label class="control">
-                    <input class="control-input" type="checkbox" name="Нет">Нет</label></li>
+                    <input class="control-input" type="radio" name="Нет">Нет</label></li>
                 </ul>
             </fieldset>
         </form>
@@ -78,22 +77,31 @@
                 <option value="cheap">Дешёвые</option>
                 <option value="expensive">Дорогие</option>
             </select>
-            <a href="#" class="button button-light"><span class="visually-hidden">Показать больше кнопкой "стрелка вверх"</span></a>
-            <a class="button" href="#"><span class="visually-hidden">Показать больше кнопкой "стрелка вниз"</span></a>
+            <button class="button button-light" type="button"><span class="visually-hidden">Показать больше кнопкой "стрелка вверх"</span></button>
+            <button class="button" type="button"><span class="visually-hidden">Показать больше кнопкой "стрелка вниз"</span></button>
         </div>
         <section class="products">
-            <a class="product-card-link" href="product.html"><img class="product-card-image" src="#" alt="Селфи палка">
-            <h3 class="product-card-title">Любительская селфи-палка</h3></a>
-            <span class="product-card-price">500 ₽</span>
-            <a class="product-card-link" href="product.html"><img class="product-card-image" src="#" alt="Профессиональная селфи палка">
-            <h3 class="product-card-title">Профессиональная селфи-палка</h3></a>
-            <span class="product-card-price">1500 ₽</span>
-            <a class="product-card-link" href="product.html"><img class="product-card-image" src="#" alt="Непотопляемая селфи палка">
-            <h3 class="product-card-title">Непотопляемая селфи-палка</h3></a>
-            <span class="product-card-price">2500 ₽</span><a class="product-card-link" href="product.html">
-            <img class="product-card-image" src="#" alt="Селфи-палка «Следуй за мной»">
-            <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3></a>
-            <span class="product-card-price">1500 ₽</span>
+            <div class="product-card">
+                <a class="product-card-link" href="product.html"><img class="product-card-image" src="#" alt="Селфи палка">
+                <h3 class="product-card-title">Любительская селфи-палка</h3></a>
+                <span class="product-card-price">500 ₽</span>
+            </div>
+            <div class="product-card">
+                <a class="product-card-link" href="product.html"><img class="product-card-image" src="#" alt="Профессиональная селфи палка">
+                <h3 class="product-card-title">Профессиональная селфи-палка</h3></a>
+                <span class="product-card-price">1500 ₽</span>
+            </div>
+            <div class="product-card">
+                <a class="product-card-link" href="product.html"><img class="product-card-image" src="#" alt="Непотопляемая селфи палка">
+                <h3 class="product-card-title">Непотопляемая селфи-палка</h3></a>
+                <span class="product-card-price">2500 ₽</span>
+            </div>
+            <div class="product-card">
+                <a class="product-card-link" href="product.html">
+                <img class="product-card-image" src="#" alt="Селфи-палка «Следуй за мной»">
+                <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3></a>
+                <span class="product-card-price">1500 ₽</span>
+            </div>
         </section>
         <div class="pagination">
             <a class="pagination-link pagination-prev pagination-disabled"><span class="back-page">Назад</span></a>
