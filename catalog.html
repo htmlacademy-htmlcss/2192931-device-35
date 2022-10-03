@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Девайс</title>
-        <link rel="stylesheet" href="styles.CSS">
+        <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
     </head>
 <body class="body">
@@ -65,9 +65,9 @@
               <legend class="catalog-filter-bluetooth">Bluetooth</legend>
                 <ul class="catalog-filter-list">
                     <li class="catalog-filter-item"><label class="control">
-                    <input class="control-input" type="radio" name="Есть" checked>Есть</label></li>
+                    <input class="control-input" type="radio" name="radio-button" value="Есть" checked>Есть</label></li>
                     <li class="catalog-filter-item"><label class="control">
-                    <input class="control-input" type="radio" name="Нет">Нет</label></li>
+                    <input class="control-input" type="radio" name="radio-button" value="Нет">Нет</label></li>
                 </ul>
             </fieldset>
         </form>
@@ -77,8 +77,8 @@
                 <option value="cheap">Дешёвые</option>
                 <option value="expensive">Дорогие</option>
             </select>
-            <button class="button button-light" type="button"><span class="visually-hidden">Показать больше кнопкой "стрелка вверх"</span></button>
-            <button class="button" type="button"><span class="visually-hidden">Показать больше кнопкой "стрелка вниз"</span></button>
+            <button class="button button-light"><span class="visually-hidden">Показать больше кнопкой "стрелка вверх"</span></button>
+            <button class="button"><span class="visually-hidden">Показать больше кнопкой "стрелка вниз"</span></button>
         </div>
         <section class="products">
             <div class="product-card">
@@ -87,7 +87,7 @@
                 <span class="product-card-price">500 ₽</span>
             </div>
             <div class="product-card">
-                <a class="product-card-link" href="product.html"><img class="product-card-image" src="images/products/product-2 .jpg" width="360" height="380" alt="Профессиональная селфи палка">
+                <a class="product-card-link" href="product.html"><img class="product-card-image" src="images/products/product-2.jpg" width="360" height="380" alt="Профессиональная селфи палка">
                 <h3 class="product-card-title">Профессиональная селфи-палка</h3></a>
                 <span class="product-card-price">1500 ₽</span>
             </div>
@@ -112,7 +112,7 @@
             <a class="pagination-link" href="#">15</a>
             <a class="pagination-link pagination-next" href="#"><span class="next-page">Вперёд</span></a>
         </div>
-        <button class="button pagination-show-more" type="button">Загрузить ещё</button>
+        <button class="button pagination-show-more">Загрузить ещё</button>
     </main>
     <footer class="page-footer">
         <img class="footer-contacts-logo" src="images/logo/logo_yellow.svg" width="145" height="36" alt="Логотип «DEVICE».">
