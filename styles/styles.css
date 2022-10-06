@@ -36,13 +36,13 @@ body{
 
 .button {
   font-family: 'Raleway';
-font-weight: 800;
-font-size: 18px;
-line-height: 21px;
-text-transform: uppercase;
-text-decoration: none;
-color: #000000;
-letter-spacing: 0.2em;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  letter-spacing: 0.2em;
 }
 
 
@@ -52,6 +52,7 @@ letter-spacing: 0.2em;
   background-color: #FFE17F;
 }
 
+/*navigation*/
 .navigation-list{
   font-family: "rubik";
   line-height: 20px;
@@ -67,11 +68,30 @@ letter-spacing: 0.2em;
   letter-spacing: 0.2em;
 }
 
+.navigation-catalog{
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
 .navigation-link{
   color: #000000;
   text-decoration: none;
-  text-transform: uppercase;
   text-align: center;
+  list-style-type: none;
+}
+
+.navigation-catalog-link{
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
 }
 
 .navigation-link-current{
@@ -183,17 +203,6 @@ color: #444444;
   letter-spacing: 0.2em;
 }
 
-.services-link-blackbackground{
-  color:#FFE17F;
-  background-color: #000000;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 21px;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  text-decoration: none;
-}
-
 .services-title{
   font-style: normal;
   font-weight: 800;
@@ -213,7 +222,7 @@ color: #444444;
 }
 
 /*delivery*/
-.delivery{
+.order{
   font-family: 'Raleway';
   font-weight: 800;
   font-size: 20px;
@@ -223,11 +232,11 @@ color: #444444;
   background: #F0F0F0;
 }
 
-.delivery-title{
+.order-title{
   text-align: center;
 }
 
-.delivery-auto{
+.order-auto{
   background-color: #FFE17F;
 }
 
@@ -254,17 +263,17 @@ color: #444444;
   color: #444444;
 }
 
+.aboutus-list{
+  color:#FFE17F;
+}
+
 .aboutus-item{
   font-family: 'Rubik';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  color:#FFE17F;
-}
-
-.aboutus-item span{
-  color:#000000;
+  color: #000000;
 }
 
 .button-feedback{
