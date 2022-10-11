@@ -50,7 +50,7 @@ body {
 }
 
 /*header*/
-.header {
+.header-catalog  {
   color: #000000;
   background-color: #ffe17f;
   width: 1160px;
@@ -58,7 +58,7 @@ body {
   margin: 40px 140px auto 140px;
 }
 
-.header-catalog {
+.header {
   color: #000000;
   background-color: #ffe17f;
   height: 300px;
@@ -88,6 +88,7 @@ body {
   line-height: 20px;
   font-weight: 400;
   font-size: 16px;
+  box-sizing:border-box;
 }
 
 .navigation-list-user {
