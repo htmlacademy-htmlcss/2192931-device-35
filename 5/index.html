@@ -92,7 +92,7 @@
     </header>
     <!--main-->
     <main class="main-container main-index">
-
+      <div class="page-container">
         <section class="slider">
           <div class="slide">
             <img class="slider-image" src="images/sliders/slider.png" width="560" height="560" alt="Квадракоптер.">
@@ -181,70 +181,68 @@
         <section class="menu">
           <ul class="menu-icons">
             <li class="menu-icons-item">
-              <img class="menu-image" src="images/icons/vector-1.svg" width="97" height="55" alt="Очки">
               <a class="menu-rectangle-link" href="#">Виртуальная реальность</a>
             </li>
             <li class="menu-icons-item">
-              <img class="menu-image" src="images/icons/vector-2.svg" width="86" height="117" alt="Моноподы">
               <a class="menu-rectangle-link" href="#">Моноподы для селфи</a>
             </li>
             <li class="menu-icons-item">
-              <img class="menu-image" src="images/icons/vector-3.svg" width="71" height="87" alt="Камеры">
               <a class="menu-rectangle-link" href="#">Экшн-камеры</a>
             </li>
             <li class="menu-icons-item">
-              <img class="menu-image" src="images/icons/vector-4.svg" width="107" height="65" alt="Браслеты">
               <a class="menu-rectangle-link" href="#">Фитнес-браслеты</a>
             </li>
             <li class="menu-icons-item">
-              <img class="menu-image" src="images/icons/vector-5.svg" width="55" height="98" alt="Часы">
               <a class="menu-rectangle-link" href="#">Умные часы</a>
             </li>
             <li class="menu-icons-item">
-              <img class="menu-image" src="images/icons/vector-6.svg" width="132" height="69" alt="Квадракоптеры">
               <a class="menu-rectangle-link" href="#">Квадрокоптеры</a>
             </li>
           </ul>
         </section>
-        <!--Секция услуг-->
-        <section class="services">
-          <div class="service">
-            <a class="services-link" href="#">Доставка</a>
-            <div class="services-container">
-              <h2 class="services-title">Доставка</h2>
-              <p class="services-description">
-                Мы с удовольствием доставим ваш товар прямок вашему подъезду
-                совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
-                на ваш этаж.
-              </p>
-            </div>
+      </div>
+      <!--Секция услуг-->
+
+      <section class="services">
+        <div class="page-container-services">
+          <div class="service-container">
+            <ul class="service">
+              <li class="service-item"><a class="service-link" href="#">Доставка</a></li>
+              <li class="service-item"><a class="service-link" href="#">Гарантия</a></li>
+              <li class="service-item"><a class="service-link" href="#">Кредит</a></li>
+            </ul>
           </div>
-          <div class="service">
-            <a class="services-link" href="#">Гарантия</a>
-            <div class="services-container">
-              <h2 class="services-title">Гарантия</h2>
-              <p class="services-description">
-                Если из-за возгорания купленного у нас товара у вас сгорит дом —
-                не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
-              </p>
-            </div>
-          </div>
-          <div class="service">
-            <a class="services-link" href="#">Кредит</a>
-            <div class="services-container">
-              <h2 class="services-title">Кредит</h2>
-              <p class="services-description">
-                Залезть в долговую яму стало проще! Кредитные консультанты
+          <div class="service-container-description">
+            <ul class="service-description">
+              <li class="service-item">
+                <h2 class="service-title">Доставка</h2>
+                <p class="service-information">
+                  Мы с удовольствием доставим ваш товар прямок вашему подъезду
+                  совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
+                  на ваш этаж.</p>
+              </li>
+              <li class="service-item">
+                <h2 class="service-title">Гарантия</h2>
+                <p class="service-information">Если из-за возгорания купленного у нас товара у вас сгорит дом —
+                не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+              </li>
+              <li class="service-item">
+                <h2 class="service-title">Кредит</h2>
+                <p class="service-information">Залезть в долговую яму стало проще! Кредитные консультанты
                 подберут для вас наиболее выгодные условия кредита. Выгодные для
-                банка, разумеется.
-              </p>
-            </div>
+                банка, разумеется.</p>
+              </li>
+            </ul>
           </div>
-        </section>
-        <!--Секция доставки-->
+        </div>
+      </section>
+      <!--Секция доставки-->
+      <div class="page-container">
         <section class="order">
-          <img class="order-auto" src="images/icons/auto.svg" width="47" height="31" alt="Авто">
-          <h2 class="order-title">Доставим редкий товар под заказ</h2>
+          <div class="order-container">
+            <button class="order-title" type="button">Доставим редкий товар под заказ</button>
+            <button class="tooltip" type="button">Тултип</button>
+          </div>
         </section>
         <!--Секция "О нас"-->
         <div class="information-container">
@@ -283,8 +281,9 @@
             <a class="button button-feedback" href="#">Напишите нам</a>
           </section>
         </div>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="newsletter-form-container">
+      </div>
+      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+        <div class="newsletter-form-container">
           <div class="form-container">
             <h2 class="mailing-title">Подпишитесь на рассылку</h2>
             <p class="mailing-text">
@@ -303,7 +302,7 @@
             <p class="priceless">Это бесплатно</p>
           </div>
         </div>
-        </form>
+      </form>
 
     </main>
     <footer class="page-footer">
