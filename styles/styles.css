@@ -1,25 +1,20 @@
 @font-face {
-
   font-family: "raleway";
   font-style: normal;
   font-weight: 800;
   src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
   font-display: swap;
-
 }
 
 @font-face {
-
   font-family: "rubik";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
   font-display: swap;
-
 }
 
 @font-face {
-
   font-family: "rubik";
   font-style: normal;
   font-weight: 700;
@@ -27,15 +22,25 @@
   font-display: swap;
 }
 
-body{
-  font-family: "rubik" ;
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
-  background: #FFFFFF;
+  background: #ffffff;
+
 }
 
 .button {
-  font-family: 'Raleway';
+  font-family: "raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -45,45 +50,85 @@ body{
   letter-spacing: 0.2em;
 }
 
-
 /*header*/
-.header{
+.header {
   color: #000000;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
+  width: 1160px;
+  height: 186px;
+  margin: 0 auto;
+  margin-top: 40px;
+
+}
+
+.logo {
+  display: block;
+  margin-left: 60px;
+  margin-top: -20px;
+  width: 145px;
 }
 
 /*navigation*/
-.navigation-list{
-  font-family: "rubik";
+.navigation {
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1040px;
+  font-family: "rubik", sans-serif;
   line-height: 20px;
   font-weight: 400;
   font-size: 16px;
+  box-sizing: border-box;
+  padding: 16px 0 45px 0;
 }
 
-.navigation-list-user{
-  font-family: 'Raleway';
+.navigation-list-user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1040px;
+  margin: 0;
+  padding: 0;
+  font-family: "raleway" sans-serif;
   line-height: 21px;
   font-weight: 800;
   font-size: 18px;
   letter-spacing: 0.2em;
+  box-sizing: border-box;
 }
 
-.navigation-catalog{
-  font-family: 'Rubik';
+.navigation-item {
+  display: inline-block;
+}
+
+.navigation-catalog {
+  display: flex;
+  flex-direction: column;
+  font-family: "raleway", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+  visibility: hidden;
+  padding: 30px 0
 }
 
-.navigation-link{
+.navigation-link {
+  display: flex;
+  flex-direction: row;
+  font-family: "rubik", sans-serif;
   color: #000000;
   text-decoration: none;
   text-align: center;
-  list-style-type: none;
+  font-style: normal;
 }
 
-.navigation-catalog-link{
-  font-family: 'Raleway';
+.navigation-catalog-link {
+  font-family: "raleway" sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -94,7 +139,7 @@ body{
   color: #000000;
 }
 
-.navigation-link-current{
+.navigation-link-current {
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -103,44 +148,76 @@ body{
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-}
-
-
-.header-number{
-  font-family: 'Rubik';
-  font-weight: 700;
-  font-size: 180px;
-  line-height: 30px;
-  color: #FFFFFF;
-  text-align: center;
 }
 
 /*main*/
-.main-index{
-  font-family: 'Raleway';
+
+.main-index {
+  font-family: "raleway", sans-serif;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   background-size: 100% auto;
-  background-repeat: no-repeat;
+
+
 }
 
-.description-title{
+.page-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.page-container-services{
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.newsletter-form-container{
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.slide {
+  display: flex;
+  flex-direction: row;
+  width: 1160px;
+  min-height: 560px;
+  box-sizing: border-box;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+}
+
+.slider-image {
+  text-align: left;
+  width: 560px;
+}
+
+.slider-title {
+  margin: 0;
+  padding: 0;
+  width: 545px;
+  text-align: left;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
 }
 
-.description-text{
-font-family: 'Rubik';
-font-weight: 400;
-font-size: 18px;
-line-height: 30px;
-color: #444444;
+.slider-text {
+  width: 560px;
+  font-family: "rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
 }
 
-.description-link{
-  font-family: 'Raleway';
+.slider-link {
+  font-family: "raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -149,35 +226,55 @@ color: #444444;
   color: #000000;
   letter-spacing: 0.2em;
   text-decoration: none;
-  background-color: #FFE17F;
-
+  background-color: #ffe17f;
 }
 
-.description-options-element{
-  font-family: 'Rubik';
+.slider-options-element {
+  font-family: "rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
   color: #444444;
 }
 
-.description-options-index{
+.slider-options-index {
   font-weight: 400;
   font-size: 36px;
   line-height: 30px;
   color: #000000;
 }
 
+.slider-pagination {
+  margin: 0 auto;
+  text-align: center;
+}
+
 /*menu*/
-.menu{
-  font-family: 'Raleway';
+.menu {
+  font-family: "raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 1160px;
+  height: 253px;
+  margin-left: -40px;
 }
 
-.menu-image{
-  background-color: #FFE17F;
+.menu-icons {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 }
 
-.menu-rectangle-link{
+.menu-icons-item {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  text-align: center;
+  padding-right: 40px;
+}
+
+.menu-rectangle-link {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -187,88 +284,160 @@ color: #444444;
 }
 
 /*services*/
-.services{
-  font-family: "Raleway";
-  background-color:#F0F0F0;
+.services {
+  font-family: "Raleway", sans-serif;
+  background-color: #f0f0f0;
+  font-style: normal;
+  font-weight: 800;
+  background-size: 100%;
+  box-sizing: border-box;
 }
 
-.services-link{
-  background-color: #FFE17F;
+
+.service-container {
+  display: flex;
+  flex-direction: row;
+  width: 287px;
+  min-height: 319px;
+  text-align: left;
+}
+
+.service-link {
+  background-color: #ffe17f;
   text-decoration: none;
   color: #000000;
-  font-weight: 800;
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
 
-.services-title{
-  font-style: normal;
-  font-weight: 800;
+.service-title {
+  text-align: left;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
 }
 
-.services-description{
-  font-family: 'Rubik';
-  font-style: normal;
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 280px;
+  height: 190px;
+  margin: -40px 100px;
+}
+
+.service-container-description {
+  font-family: "rubik", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: #444444;
+  width: 694px;
+  min-height: 174px;
+}
 
+.service-item {
+  width: 280px;
+  height: 40px;
+  display: inline;
 }
 
 /*delivery*/
-.order{
-  font-family: 'Raleway';
+.order {
+  font-family: "raleway", sans-serif;
+  background: #f0f0f0;
+  width: 1160px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.order-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.order-title {
+  width: 1160px;
+  min-height: 100px;
+}
+
+.tooltip {
+  position: relative;
+  right: 83px;
+  top: 30px;
+  width: 40px;
+  height: 40px;
+}
+
+/*.-container{
+  background-color:#F0F0F0;
+  display: flex;
+  justify-content: center;
+  width: 1160px;
+  margin: 0 auto;
+}*/
+
+.order-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1160px;
+  text-align: center;
   font-weight: 800;
   font-size: 20px;
   line-height: 23px;
-  color: #000000;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  background: #F0F0F0;
 }
 
-.order-title{
-  text-align: center;
-}
-
-.order-auto{
-  background-color: #FFE17F;
+.order-auto {
+  background-color: #ffe17f;
+  width: 125px;
+  height: 100px;
 }
 
 /*aboutus*/
-.aboutus{
-  background: #FFFFFF;
+.information-container {
+  display: flex;
+  flex-direction: row;
+  width: 1160px;
+  text-align: left;
+  box-sizing: border-box;
 }
 
-.aboutus-title{
-  font-family: 'Raleway';
+.aboutus {
+  width: 520px;
+  background: #ffffff;
+  font-family: "raleway", sans-serif;
   font-style: normal;
+}
+
+.aboutus-title {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
 }
 
-.aboutus-information{
-  font-family: 'Rubik';
-  font-style: normal;
+.aboutus-information {
+  font-family: "rubik", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: #444444;
 }
 
-.aboutus-list{
-  color:#FFE17F;
+.aboutus-list {
+  color: #ffe17f;
 }
 
-.aboutus-item{
-  font-family: 'Rubik';
+.aboutus-item {
+  font-family: "rubik", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -276,8 +445,8 @@ color: #444444;
   color: #000000;
 }
 
-.button-feedback{
-  font-family: 'Raleway';
+.button-feedback {
+  font-family: "raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -285,23 +454,24 @@ color: #444444;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
   letter-spacing: 0.2em;
 }
 
 /*contacts*/
-.contacts{
-  background: #FFFFFF;
+.contacts {
+  background: #ffffff;
   color: #444444;
   line-height: 30px;
-  font-family: 'Rubik';
+  font-family: "rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
+  box-sizing: border-box;
 }
 
-.contacts-title{
-  font-family: 'Raleway';
+.contacts-title {
+  font-family: "raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
@@ -309,110 +479,192 @@ color: #444444;
   color: #000000;
 }
 
-.contacts-subtitle{
+.contacts-subtitle {
   font-weight: 700;
   font-size: 24px;
 }
 
-.contacts-address{
+.contacts-address {
   font-style: normal;
 }
 
-.contacts-phone{
+.contacts-phone {
   text-decoration: none;
   color: #444444;
 }
 
-.contacts-subtitle{
+.contacts-subtitle {
   font-weight: 700;
   font-size: 24px;
 }
 
 /*form*/
-.newsletter-form{
-  background-color: #F0F0F0;
-  font-family: 'Rubik';
+.newsletter-form {
+  text-align: left;
+  background-color: #f0f0f0;
+  font-family: "rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: #444444;
+  box-sizing: border-box;
 }
 
-.mailing-title{
-  font-family: 'Raleway';
+.form-container {
+  display: flex;
+  justify-content: row;
+  text-align: center;
+}
+
+.newsletter-container {
+  display: flex;
+  justify-content: row;
+  justify-content: space-between;
+}
+
+.mailing-title {
+  text-align: left;
+  font-family: "raleway", sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
   color: #000000;
 }
 
-
 /*footer*/
-.page-footer{
-  font-family: 'Rubik';
+.page-footer {
+  font-family: "rubik", sans-serif;
   background-color: #444444;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  min-height: 321px;
 }
 
-.page-footer a{
-  color: #FFFFFF;
+.page-footer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 1160px;
+  margin: 0 auto;
 }
 
-.footer-address-text{
+.page-footer a {
+  color: #ffffff;
+}
+
+.footer-address-text {
   font-style: normal;
 }
 
-.footer-prices-link{
-  font-family: 'Raleway';
+.footer-prices {
+  width: 444px;
+  height: 123px;
+  margin: 0 auto;
+  padding: 137px 119px 61px 183px;
+}
+
+.footer-contacts {
+  width: 239px;
+  height: 182px;
+  padding: 62px 140px auto 177px;
+}
+
+.footer-contacts-user {
+  display: flex;
+  flex-direction: column;
+  width: 175px;
+  height: 116px;
+}
+
+.footer-social-item {
+  display: inline-block;
+}
+
+.footer-prices-item {
+  display: inline-block;
+}
+
+.footer-contacts-user-item {
+  display: inline-block;
+}
+
+.footer-prices-link {
+  font-family: "raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   letter-spacing: 0.2em;
 }
 
-.footer-contacts-address-phone{
+.footer-contacts-address-phone {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.inner-header-title{
-  font-family: 'Raleway';
+.inner-header-title {
+  font-family: "raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+  margin-bottom: 15px;
 }
 
 /*breadcrumbs*/
-.breadcrumb{
+.breadcrumbs {
   font-style: normal;
-  font-family: 'Rubik';
+  font-family: "rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  width: 1079px;
+
+  height: 86px;
+  margin: 36px 200px 34px 200px;
 }
 
 /*catalog*/
-.breadcrumbs-link{
+.breadcrumbs-link {
   color: #000000;
   text-decoration: none;
+  padding-right: 33px;
 }
 
-.catalog-group{
-  background-color:#F0F0F0;
+.main-container {
+  flex-grow: 1;
+}
+
+.catalog-group {
+  background-color: #f0f0f0;
   color: #000000;
-
+  width: 320px;
+  margin-right: 40px;
 }
 
-.catalog-products-filter{
-  font-family: 'Raleway';
+.catalog-right-column {
+  width: 840px;
+}
+
+.catalog-group-container {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.catalog-products-filter-container {
+  display: flex;
+}
+
+.catalog-products-filter {
+  font-family: "raleway", sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
@@ -420,20 +672,18 @@ color: #444444;
   text-transform: uppercase;
 }
 
-.catalog-filter-group{
-  font-family: 'Rubik';
+.catalog-filter-group {
+  font-family: "rubik", sans-serif;
   line-height: 20px;
 }
 
-.catalog-filter-index{
-  font-family: 'Rubik';
+.catalog-filter-index {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
 }
 
-.catalog-filter-bluetooth{
-  font-family: 'Rubik';
+.catalog-filter-bluetooth {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -441,16 +691,16 @@ color: #444444;
   letter-spacing: -0.02em;
 }
 
-.control{
-  font-family: 'Rubik';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 20px;
+.control {
+  font-family: "rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }
 
-.button-show{
-  font-family: 'Raleway';
+.button-show {
+  font-family: "raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -458,17 +708,22 @@ line-height: 20px;
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  background-color: #FFE17F;
+  background-color: #ffe17f;
 }
 
 /*products*/
-.products{
-  font-family: 'Rubik';
-  background-color:  #FFFFFF;
+.products {
+  font-family: "rubik", sans-serif;
+  background-color: #ffffff;
   font-style: normal;
 }
 
-.product-card-link{
+.products-container {
+  display: flex;
+  width: 840px;
+}
+
+.product-card-link {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -477,7 +732,11 @@ line-height: 20px;
   color: #000000;
 }
 
-.product-card-price{
+.product-card {
+  box-sizing: border-box;
+}
+
+.product-card-price {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -485,8 +744,8 @@ line-height: 20px;
   color: #444444;
 }
 
-.pagination-show-more{
-  font-family: 'Raleway';
+.pagination-show-more {
+  font-family: "raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -495,17 +754,31 @@ line-height: 20px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
+}
+
+.product-link {
+  color: #000000;
+  background-color: #ffe17f;
+  text-decoration: none;
+  font-family: "raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 /*pagination*/
-.pagination{
-  background-color: #EBEBEB;
-  font-family: 'Raleway';
+.pagination {
+  background-color: #ebebeb;
+  font-family: "raleway", sans-serif;
 }
 
-.pagination-link{
-  font-family: "Rubik";
+.pagination-link {
+  font-family: "rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -516,8 +789,8 @@ line-height: 20px;
   color: #444444;
 }
 
-.back-page{
-  font-family: 'Raleway';
+.back-page {
+  font-family: "raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -526,8 +799,8 @@ line-height: 20px;
   opacity: 0.3;
 }
 
-.next-page{
-  font-family: 'Raleway';
+.next-page {
+  font-family: "raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
