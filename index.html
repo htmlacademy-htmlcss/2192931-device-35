@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
   </head>
+
   <body class="body">
     <header class="header">
       <a class="logo-link" href="index.html"><img class="logo" src="images/logo/logo.svg" width="145" height="36"
@@ -30,7 +32,7 @@
             </li>
 
             <li class="navigation-item-basket">
-              <a class="navigation-link navigation-link-basket" href="#">
+              <a class="navigation-link navigation-link-basket backet-btn" href="#">
                 <span class="counter-basket">2</span>Корзина</a>
             </li>
           </ul>
@@ -91,27 +93,37 @@
       <div class="page-container">
         <section class="slider">
           <div class="slide">
-            <img class="slider-image" src="images/sliders/slider.png" width="560" height="560" alt="Квадракоптер.">
-            <div class="slider-container">
-              <h2 class="slider-title">Порхает как бабочка,<br>жалит как пчела!</h2>
-              <p class="slider-text">
-                Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
-                лазером, замаскированным под стандартную камеру.
-              </p>
-              <span class="slider-link-item"><a class="slider-link" href="#">Подробнее</a></span>
-              <dl class="slider-options">
-                <div class="slider-options-element">
-                  <dt class="slider-options-index">800 м</dt>
-                  <dd class="slider-option">Дальность полета</dd>
-                </div>
-                <div class="slider-options-element-radius">
-                  <dt class="slider-options-index">50 м</dt>
-                  <dd class="slider-option">Радиус поражения</dd>
-                </div>
-              </dl>
+            <div class="slider-wrapper">
+              <img class="slider-image" src="images/sliders/slider.png" width="560" height="560" alt="Квадракоптер.">
+              <div class="slider-controls">
+                <button class="slider-button slider-prev" type="button">
+                  <span class="visually-hidden">Предыдущее фото</span>
+                </button>
+                <button class="slider-button slider-next" type="button">
+                  <span class="visually-hidden">Следующее фото</span>
+                </button>
+              </div>
+              <div class="slider-container">
+                <h2 class="slider-title">Порхает как бабочка,<br>жалит как пчела!</h2>
+                <p class="slider-text">
+                  Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
+                  лазером, замаскированным под стандартную камеру.
+                </p>
+                <span class="slider-link-item"><a class="slider-link" href="#">Подробнее</a></span>
+                <dl class="slider-options">
+                  <div class="slider-options-element">
+                    <dt class="slider-options-index">800 м</dt>
+                    <dd class="slider-option">Дальность полета</dd>
+                  </div>
+                  <div class="slider-options-element-radius">
+                    <dt class="slider-options-index">50 м</dt>
+                    <dd class="slider-option">Радиус поражения</dd>
+                  </div>
+                </dl>
+              </div>
             </div>
           </div>
-          <div class="slide">
+          <div class="slide is-hidden">
             <img class="slider-image" src="images/sliders/slider-2.png" width="560" height="560"
               alt="Электронные часы.">
             <div class="slider-container">
@@ -129,7 +141,7 @@
               </dl>
             </div>
           </div>
-          <div class="slide">
+          <div class="slide is-hidden">
             <img class="slider-image" src="images/sliders/slider-3.png" width="560" height="560" alt="Селфи-палки.">
             <div class="slider-container">
               <h2 class="slider-title">Делай селфи,<br>как Бен Стиллер!</h2>
@@ -154,21 +166,18 @@
               </dl>
             </div>
           </div>
-          <button class="slider-button slider-prev">
-            <span class="visually-hidden">Предыдущее фото</span>
-          </button>
-          <button class="slider-button slider-next">
-            <span class="visually-hidden">Следующее фото</span>
-          </button>
+
+
+
 
           <div class="slider-pagination">
             <button class="slider-pagination-button slider-pagination-button-current" type="button">
               <span class="visually-hidden">1 фото</span>
             </button>
-            <button class="slider-pagination-button">
+            <button class="slider-pagination-button" type="button">
               <span class="visually-hidden">2 фото</span>
             </button>
-            <button class="slider-pagination-button">
+            <button class="slider-pagination-button" type="button">
               <span class="visually-hidden">3 фото</span>
             </button>
           </div>
@@ -272,38 +281,18 @@
                   Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду
                   совершенно бесплатно! Ведь<br> мы неплохо заработаем, поднимая его
                   на ваш этаж.</p>
-                <svg class="navigation-delivery-icon" aria-hidden="true" focusable="false" width="136" height="165"
-                  fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#a)">
-                    <path
-                      d="M93.13 39.27c8.12 0 14.95-5.55 16.9-13.05l5.47.81a2.16 2.16 0 0 0 .64-4.27l-5.55-.82v-.68s-.46-6.52-1.08-9.24c-.62-2.72-2.54-3.3-2.54-3.3A111.85 111.85 0 0 0 84.6 6.3c-2.6 0-3.16 1.33-3.16 1.33l-3.15 5-.23.36-.02.04a17.46 17.46 0 0 0 15.1 26.24ZM131.53 78.58 104.8 76.4l-9.24-21.12s-.46-2.77-6.01-8.47c-5.55-5.7-16.8-3.4-16.8-3.4s-23.89 4.48-31.75 6.33c-7.86 1.85-8.16 9.86-8.16 9.86l-.64 4.52-15.17-2.94a2.99 2.99 0 0 0-3.52 2.37L6.1 101.8a3 3 0 0 0 2.37 3.52l51.2 9.92.35.04c-.73.1-1.3-.04-1.3-.04l-9.4-1.85-3.07 17.1-23.56 20.37a7.41 7.41 0 0 0 4.63 13.23 7.4 7.4 0 0 0 5.22-2.15s27.73-22.04 29.58-23.59c1.85-1.54 2.77-3.85 2.77-3.85s4.54-13.95 5.78-16.87c.85-2 4.93-1.08 4.93-1.08l22.89 8.63 7.61 29.06a7.43 7.43 0 1 0 14.59-2.7c-.84-4.97-4.6-27.05-5.56-31.83-1.08-5.4-4.62-6.94-4.62-6.94s-21.27-11.55-22.66-12.33c-1.38-.77-1.08-2.77-1.08-2.77l3.93-14.33 2.78 5.85s1.62 3.28 4.08 3.4l33.36.82a7.43 7.43 0 0 0 .63-14.83ZM60.1 63.3l-1.79 5.88 9.9 1.92L48 67.19l.55-2.5 11.55-1.38Zm-2.25 45.47L12.55 100l6.27-32.35 12.54 2.43-1.62 11.56-.64 4.41v.08l-.03.13a7.43 7.43 0 1 0 14.74.01l2.9-13.22 17.42 3.37-6.28 32.36ZM25.05 17.5h38.03a2 2 0 0 0 2-1.98 2 2 0 0 0-2-2H25.05a2 2 0 0 0-2 2 2 2 0 0 0 2 1.99ZM38.08 23.52a2 2 0 0 0-2 2 2 2 0 0 0 2 1.98h22.96a2 2 0 0 0 2-1.99 2 2 0 0 0-2-1.99H38.08Z"
-                      fill="#fff" />
-                    <path
-                      d="M87.1 33.23c8.12 0 14.94-5.54 16.9-13.05l5.47.82.31.02a2.16 2.16 0 0 0 .32-4.29l-5.54-.83v-.13l-.01-.54s-.45-6.52-1.08-9.24c-.62-2.72-2.53-3.3-2.53-3.3A111.85 111.85 0 0 0 78.56.25c-2.6 0-3.15 1.34-3.15 1.34l-3.15 5-.01-.01-.22.37-.03.04a17.47 17.47 0 0 0 15.1 26.24ZM125.5 72.54l-26.74-2.17-9.25-21.11s-.46-2.77-6-8.48c-5.56-5.7-16.8-3.39-16.8-3.39s-23.9 4.47-31.75 6.32c-7.86 1.85-8.17 9.86-8.17 9.86l-3.08 22.04-.64 4.4-.01.09-.02.12a7.43 7.43 0 1 0 14.73.01l4.74-21.57 11.56-1.39-1.8 5.88 9.9 1.92a3.01 3.01 0 0 1 2.38 3.52l-7.41 38.24a3.01 3.01 0 0 1-2.95 2.43l-.22-.02c-.73.1-1.29-.04-1.29-.04l-9.4-1.84-3.08 17.1-23.56 20.36a7.41 7.41 0 0 0 4.64 13.23 7.4 7.4 0 0 0 5.22-2.14s27.72-22.05 29.57-23.6a10.93 10.93 0 0 0 2.77-3.84s4.54-13.95 5.78-16.88c.85-2 4.94-1.08 4.94-1.08l22.88 8.63 7.62 29.07a7.43 7.43 0 1 0 14.59-2.7c-.85-4.98-4.61-27.06-5.57-31.84-1.08-5.4-4.62-6.93-4.62-6.93S83.19 95.18 81.81 94.4c-1.39-.77-1.08-2.77-1.08-2.77l3.93-14.33 2.77 5.85s1.62 3.28 4.09 3.4l33.35.81a7.43 7.43 0 0 0 .63-14.83Z"
-                      fill="#3A3A3A" />
-                    <path
-                      d="m53.97 109.64.22.03c1.41 0 2.67-1 2.95-2.44L64.55 69a3.01 3.01 0 0 0-2.37-3.52l-20.22-3.91-1.28 5.86 17.41 3.37-6.27 32.36-45.3-8.78 6.27-32.35 12.54 2.43.83-5.95-15.18-2.95a2.99 2.99 0 0 0-3.51 2.38L.05 96.17a3 3 0 0 0 2.38 3.52l51.2 9.92c.11.02.22.03.34.03Z"
-                      fill="#F0C42E" />
-                    <path
-                      d="M59.04 9.48a2 2 0 0 1-2 2H19.01a2 2 0 0 1-2-2 2 2 0 0 1 2-1.99h38.03a2 2 0 0 1 2 2ZM57 19.48a2 2 0 0 1-2 1.99H32.04a2 2 0 0 1-2-1.99 2 2 0 0 1 2-1.99H55a2 2 0 0 1 2 1.99Z"
-                      fill="#F0C52E" />
-                  </g>
-                  <defs>
-                    <clipPath id="a">
-                      <path fill="#fff" transform="translate(0 .5)" d="M0 0h136v164H0z" />
-                    </clipPath>
-                  </defs>
-                </svg>
+
               </li>
-              <li class="service-item-delivery">
-                <h2 class="service-title" hidden>Гарантия</h2>
-                <p class="service-information" hidden>Если из-за возгорания купленного у нас товара у вас сгорит дом —
+              <li class="service-item-warranty is-hidden">
+                <h2 class="service-title">Гарантия</h2>
+                <p class="service-information">Если из-за возгорания купленного у нас товара у вас сгорит дом —
                   не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+
               </li>
-              <li class="service-item">
-                <h2 class="service-title" hidden>Кредит</h2>
-                <p class="service-information" hidden>Залезть в долговую яму стало проще! Кредитные консультанты
-                  подберут для вас наиболее выгодные условия кредита. Выгодные для
+              <li class="service-item-credit-block is-hidden">
+                <h2 class="service-title">Кредит</h2>
+                <p class="service-information">Залезть в долговую яму стало проще! Кредитные<br> консультанты
+                  подберут для вас наиболее выгодные<br> условия кредита. Выгодные для
                   банка, разумеется.</p>
               </li>
             </ul>
@@ -449,5 +438,93 @@
       </div>
     </footer>
     <script src="scripts.js"></script>
+
+    <div class="popover popover-cart popover-open">
+      <ul class="popover-list">
+        <li class="popover-item">
+          <a class="popover-link" href="#"><img class="popover-image" src="images/product-small-1.png" width="39"
+              height="43" alt="Любительская селфи палка">
+            <h2 class="popover-name">Любительская<br> селфи-палка</h2>
+          </a>
+          <button class="popover-close-button button" type="button"><span
+              class="visually-hidden">закрыть</span></button>
+        </li>
+        <li class="popover-item">
+          <a class="popover-link" href="#"><img class="popover-image" src="images/product-small-2.png" width="39"
+              height="43" alt="Профессиональная селфи палка">
+            <h2 class="popover-name">Профессиональная<br> селфи-палка</h2>
+          </a>
+          <button class="popover-close-button button" type="button"><span
+              class="visually-hidden">закрыть</span></button>
+        </li>
+        <li class="popover-item-card">
+          <p class="popover-card-first">Товаров: 2</p>
+          <p class="popover-card-second">Сумма: 2000 ₽</p>
+        </li>
+        <li class="popover-item"><button class="popover-open-button" type="button">Открыть корзину</button></li>
+      </ul>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <button class="modal-close-button button" type="button"><span class="visually-hidden">закрыть</span></button>
+        <h2 class="modal-title">Доставка под заказ</h2>
+        <div class="modal-form">
+          <div class="modal-form-name">
+            <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="field-group-name">Ваше имя</p>
+              <label class="visually-hidden">Введите имя</label>
+              <input class="auth-form-field" type="text" name="auth-login" placeholder="Введите имя">
+              <p class="auth-text">Добавьте имя</p>
+          </div>
+          <div class="modal-form-email">
+            <p class="mail-modal-name">Ваш e-mail</p>
+            <fieldset class="modal-fieldset">
+              <input class="modal-mail form" type="email" placeholder="почта" list="mailList">
+              <datalist id="mailList">
+                <option value="mail0@example.com" label="E-mail №1">
+                <option value="mail1@example.com" label="E-mail №2">
+                <option value="mail2@example.com" label="E-mail №3">
+              </datalist>
+            </fieldset>
+            <p class="auth-text adress">Забавный у вас адрес</p>
+
+          </div>
+
+        </div>
+        <div class="modal-form-number">
+          <div class="modal-form-text">
+            <p class="modal-form-text-title">Что нужно привезти</p>
+            <label class="visually-hidden" for="uname">В свободной форме</label>
+            <input class="modal-form-text-name" type="text" id="uname" name="name" placeholder="В свободной форме" />
+          </div>
+          <div class="modal-form-number-text">
+            <span class="form-label">
+              <label class="modal-form-number-title" for="appointment-number">Количество:</label>
+              <span class="tooltip-modal">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Постараемся найти, сколько нужно.
+                  Привезём сколько получится по требованиям<br>
+                  к провозу багажа.</span>
+              </span>
+            </span>
+            <div class="modal-auth-container">
+              <button class="modal-button pro"></button>
+              <input class="number-modal" type="text" placeholder="1" id="appointment-number">
+              <button class="modal-button con"></button>
+            </div>
+          </form>
+          </div>
+        </div>
+        <button class="modal-button-submit" type="submit">Отправить</button>
+      </div>
+    </div>
+    <div class="modal-button-container">
+      <button class="modal-button button" type="submit">Отправить</button>
+    </div>
+
+
+
   </body>
 </html>
