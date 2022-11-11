@@ -263,6 +263,7 @@ body {
 
 .navigation-list-user {
   display: flex;
+  flex-wrap: wrap;
   min-width: 1040px;
   margin: 0;
   margin-bottom: 20px;
@@ -423,6 +424,7 @@ body {
 .newsletter-form-container {
   width: 1160px;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 .slider {
@@ -445,9 +447,9 @@ body {
   display: flex;
   flex-direction: column;
   width: 560px;
-  height: 401px;
   margin-left: 40px;
   margin-top: 85px;
+  padding-bottom: 55px;;
 }
 
 .slider-container:before {
@@ -539,19 +541,21 @@ body {
   letter-spacing: 0.2em;
   text-decoration: none;
   z-index: 0;
+  height: 100%;
+  transition: all 0.4s ease-in-out;
 }
 
 .slider-link::before {
   content: "";
   position: absolute;
-  left: 1px;
-  top: 84%;
-  transform: translateX(-1px) translateY(-17px);
+  top: 50%;
+  transform:translateY(-50%);
   display: block;
   width: 220px;
   height: 6px;
   background: #ffe17f;
   z-index: -1;
+  transition: all 0.4s ease-in-out;
 }
 
 .slider-options {
@@ -794,6 +798,7 @@ body {
   border-right: 7px solid black;
   margin-top: -17px;
   margin-left: -8px;
+  margin-bottom: 65px;
 }
 
 .service-link {
@@ -809,6 +814,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 10px 0 10px 0;
+  transition: all 0.4s ease-in-out;
 }
 
 .service-link-credit {
@@ -824,6 +830,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 10px 0 10px 0;
+  transition: all 0.4s ease-in-out;
 }
 
 .service-link::before {
@@ -898,6 +905,7 @@ body {
   min-height: 174px;
   padding-left: 116px;
   padding-top: 29px;
+  padding-bottom: 65px;
 }
 
 .service-information {
@@ -1186,14 +1194,14 @@ body {
 .button-feedback::before {
   content: "";
   position: absolute;
-  left: 1px;
   top: 50%;
-  transform: translateY(-50%) translateX(0%);
+  transform: translateY(-50%) translateX(2%);
   display: block;
   width: 260px;
   height: 8px;
   background: #ffe17f;
   z-index: -1;
+  transition: all 0.4s ease-in-out;
 }
 
 /*contacts*/
@@ -1453,13 +1461,18 @@ body {
   background: #ffc700;
 }
 
+.footer-contacts-user-list{
+  padding:0;
+  padding-left: 10px;
+}
+
 .footer-contacts-user {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   min-width: 175px;
   min-height: 116px;
-  padding-left: 135px;
+  padding-left: 142px;
   padding-top: 105px;
 }
 
@@ -1467,6 +1480,7 @@ body {
   margin-top: 0;
   min-width: 444px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-social-item {
@@ -1475,12 +1489,9 @@ body {
 }
 
 .footer-prices-item {
+  width: 121px;
   display: inline-block;
-  margin-right: 35px;
-}
-
-.footer-prices-item:last-child {
-  margin-right: 0;
+  margin-right: 37px;
 }
 
 .footer-contacts-user-item {
@@ -1493,7 +1504,7 @@ body {
   text-decoration: none;
   color: #ffffff;
   min-width: 175px;
-  margin-top: 18px;
+  margin-top: 21px;
   margin-left: 1px;
   padding: 0;
 }
@@ -1528,6 +1539,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40px 40px;
+  border-radius: 50%;
 }
 
 .footer-social-tw {
@@ -1565,8 +1577,8 @@ body {
   font-size: 16px;
   line-height: 20px;
   width: 1079px;
-  height: 86px;
-  margin: 36px 200px 34px 58px;
+  padding-bottom: 35px;
+  padding: 0 58px 37px 58px;
 }
 
 .breadcrumbs-list {
@@ -1844,16 +1856,16 @@ body {
 
 .control-mark {
   position: absolute;
-  left: 5px;
-  width: 18px;
-  height: 18px;
+  left: 0;
+  width: 17px;
+  height: 17px;
   border: 2px solid #000000;
   border-radius: 15%;
 }
 
 .control-mark-radio {
   position: absolute;
-  left: 5px;
+  left: 4px;
   width: 18px;
   height: 18px;
   border: 2px solid #000000;
@@ -2308,7 +2320,8 @@ body {
 }
 
 .pagination-item-next {
-  margin: 0 0 0 145px;
+  margin: 0;
+  margin-left: 173px;
 }
 
 .header-search {
@@ -2359,6 +2372,10 @@ body {
   outline-offset: 3px;
   z-index: 2;
 }
+
+.search::-webkit-inner-spin-button,
+.search::-webkit-inner-spin-button,
+.search::-webkit-clear-button{-webkit-appearance: none; margin: 0;}
 
 .navigation-button:hover {
   background: #000000;
@@ -2419,26 +2436,26 @@ body {
   border: 2px solid #af4fff;
 }
 
-.slider-link:hover {
-  background: #ffe17f;
+.slider-link:hover::before {
+  background-color: #ffe17f;
+  transition: all 0.4s ease-in-out;
+  height: 100%;
 }
 
-.slider-link:active {
-  background: #ffcc33;
+.slider-link:active::before {
+  background-color: #ffcc33;
+  transition: all 0.4s ease-in-out;
+  height: 100%;
 }
 
 .slider-link:focus {
   outline: 2px solid #af4fff;
+  transition: all 0.4s ease-in-out;
+  height: 100%;
 }
 
 .menu-rectangle-link:hover {
-  background: linear-gradient(
-    to bottom,
-    #ffc700 0,
-    #ffc700 160px,
-    #ffffff 40px,
-    #ffffff 100%
-  );
+  background: linear-gradient(to bottom,#ffc700 0,#ffc700 160px,#ffffff 40px,#ffffff 100%);
 }
 
 .menu-rectangle-link:active {
@@ -2485,8 +2502,10 @@ body {
   outline: 2px solid #af4fff;
 }
 
-.button-feedback:hover {
+.button-feedback:hover::before {
   background: #ffe17f;
+  height: 100%;
+  transition: all 0.4s ease-in-out;
 }
 
 .button-feedback:active {
@@ -2497,7 +2516,9 @@ body {
   outline: 2px solid #af4fff;
 }
 
-.button-button-feedback:hover {
+.button-button-feedback:hover::before{
+  height: 100%;
+  transition: all 0.4s ease-in-out;
   background: #ffe17f;
 }
 
@@ -2562,7 +2583,7 @@ body {
 
 .footer-social-link:focus {
   outline: 2px solid #af4fff;
-  border-radius: 0%;
+  border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -2613,6 +2634,7 @@ body {
 }
 
 .product-card-link:hover {
+  transition: all 0.4s ease-in-out;
   opacity: 0.6;
 }
 
@@ -2653,9 +2675,10 @@ body {
   transition: all 0.4s ease-in-out;
 }
 
-.service-link-credit:hover {
+.service-link-credit:hover::before {
   background-color: #ffe17f;
   transition: all 0.4s ease-in-out;
+  height: 100%;
 }
 
 .service-link-credit:active::before {
@@ -2668,13 +2691,15 @@ body {
   transition: all 0.4s ease-in-out;
 }
 
-.service-link:hover {
+.service-link:hover::before {
   background-color: #ffe17f;
   transition: all 0.4s ease-in-out;
+  height: 100%;
 }
 
 .service-link:active::before {
   background: #ffc700;
+  transition: all 0.4s ease-in-out;
   height: 100%;
 }
 
@@ -2696,7 +2721,7 @@ body {
   position: absolute;
   top: 100%;
   left: -143%;
-  z-index: 2;
+  z-index: 3;
   box-sizing: border-box;
   width: 320px;
   padding: 0;
@@ -2713,10 +2738,6 @@ body {
 
 .popover-cards {
   display: flex;
-}
-
-.popover-open {
-  display: ;
 }
 
 .popover:before {
@@ -2921,6 +2942,7 @@ body {
   background-image: url("../images/close.svg");
   background-repeat: no-repeat;
   background-position: center;
+  transition: all 0.4s ease-in-out;
   cursor: pointer;
 }
 
@@ -2979,6 +3001,7 @@ body {
 
 .modal-button-submit {
   position: relative;
+  padding: 10px 5px 10px 5px;
   z-index: 0;
   font-family: "raleway", sans-serif;
   font-style: normal;
@@ -2997,29 +3020,38 @@ body {
 }
 
 .modal-button-submit::before {
+  content: "";
   position: absolute;
+  transform:  translateY(-50%);
+  display: block;
+  width: 200px;
+  height: 8px;
+  background: #ffe17f;
   z-index: -1;
-  content: url("../images/modul-arrow.svg");
-  top: 20%;
-  left: 0%;
+  transition: all 0.4s ease-in-out;
+  left:0;
+  top: 50%;
 }
 
 .modal-button.con {
   background-position: 20px 20px;
   background-repeat: no-repeat;
   background-image: url("../images/modal-pro.svg");
+  transition: all 0.4s ease-in-out;
 }
 
-.modal-button-submit:hover {
-  background: #ffe17f;
+.modal-button-submit:hover::before {
+  background-color: #ffcc33;
+  height: 100%;
 }
 
 .modal-button-submit:focus {
   outline: 2px solid #af4fff;
 }
 
-.modal-button-submit:active {
-  background: #ffc700;
+.modal-button-submit:active::before {
+  background-color: #ffcc33;
+  height: 100%;
 }
 
 .field-group-name {
@@ -3060,7 +3092,6 @@ body {
 }
 
 .modal-fieldset {
-  border: 2px solid #ff3d3d;
   width: 355px;
   height: 58px;
   background: #f0f0f0;
@@ -3158,6 +3189,7 @@ body {
   background-image: url("../images/con-modal.svg");
   background-repeat: no-repeat;
   background-position: 20px 30px;
+  transition: all 0.4s ease-in-out;
 }
 
 .modal-button:hover{
@@ -3192,6 +3224,11 @@ z-index: 1;
 
 .modal-mail::placeholder {
   color: rgba(0, 0, 0, 1);
+}
+
+.modal-mail.error{
+  border: 2px solid #ff3d3d;
+  margin:-2px;
 }
 
 .modal-auth-container {
