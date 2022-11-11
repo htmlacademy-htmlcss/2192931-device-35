@@ -1994,6 +1994,7 @@ body {
 .button-back:focus,
 .button-top:focus {
   outline: 2px solid #af4fff;
+  opacity: 1;
 }
 
 .catalog-filter-list {
@@ -2934,6 +2935,7 @@ body {
 .modal-close-button:focus {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
+  opacity: 1;
 }
 
 .modal-title {
@@ -3156,6 +3158,21 @@ body {
   background-image: url("../images/con-modal.svg");
   background-repeat: no-repeat;
   background-position: 20px 30px;
+}
+
+.modal-button:hover{
+  opacity: 0.5;
+}
+
+.modal-button:active{
+  opacity: 0.3;
+}
+
+.modal-button:focus{
+outline:2px solid #AF4FFF;
+opacity: 1;
+outline-offset: 1px;
+z-index: 1;
 }
 
 .modal-mail {
