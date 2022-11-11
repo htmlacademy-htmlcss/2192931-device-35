@@ -2617,7 +2617,7 @@ body {
   opacity: 0.3;
 }
 
-.pagination-link:hover {
+.pagination-link:focus{
   background-color: #dcdcdc;
   color: #000000;
   opacity: 1;
