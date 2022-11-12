@@ -285,8 +285,13 @@ body {
   margin-right: 45px;
 }
 
+.navigation-item:nth-child(2) {
+  margin-right: 42px;
+}
+
 .navigation-item:last-child {
   margin-right: 0;
+  width:129px;
 }
 
 .navigation-catalog {
@@ -656,6 +661,7 @@ body {
 .slider-pagination-button:focus {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
+  opacity: 1;
 }
 
 .slider-pagination-button-current {
@@ -3041,7 +3047,7 @@ body {
 }
 
 .modal-button-submit:hover::before {
-  background-color: #ffcc33;
+  background-color: #ffe17f;
   height: 100%;
 }
 
