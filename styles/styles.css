@@ -295,23 +295,20 @@ body {
 }
 
 .navigation-catalog {
-  position: absolute;
-  top: -18px;
-  left: 310px;
   display: flex;
   flex-direction: column;
   font-family: "raleway", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  padding: 30px 0;
+  padding: 15px 0 0 58px;
   margin: 0;
   list-style-type: none;
 }
 
 .sub-navigation-catalog {
   position: absolute;
-  top: -18px;
+  top: -17px;
   left: 523px;
   display: flex;
   flex-direction: column;
@@ -382,7 +379,7 @@ body {
 }
 
 .sub-navigation.is-active {
-  display: block;
+  display: flex;
   position: absolute;
   top: 90%;
   left: 0;
@@ -1433,6 +1430,7 @@ body {
 
 .page-footer-container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   width: 1160px;
@@ -1445,7 +1443,7 @@ body {
 }
 
 .footer-prices {
-  min-width: 444px;
+  width: 484px;
   min-height: 123px;
   padding-top: 122px;
   padding-left: 79px;
@@ -1454,7 +1452,7 @@ body {
 .footer-contacts-container {
   position: relative;
   padding-top: 30px;
-  min-width: 239px;
+  width: 239px;
   min-height: 182px;
 }
 
@@ -1479,17 +1477,18 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  min-width: 175px;
+  width: 185px;
   min-height: 116px;
-  padding-left: 142px;
+  padding-left: 173px;
   padding-top: 105px;
 }
 
 .footer-prices-list {
   margin-top: 0;
-  min-width: 444px;
+  width: 474px;
   display: flex;
   flex-wrap: wrap;
+  padding-left: 42px;
 }
 
 .footer-social-item {
@@ -1503,16 +1502,20 @@ body {
   margin-right: 37px;
 }
 
+.footer-prices-item:last-child{
+  margin:0;
+}
+
 .footer-contacts-user-item {
   display: flex;
   flex-wrap: nowrap;
-  min-width: 175px;
+  width: 175px;
 }
 
 .footer-contacts-address-phone {
   text-decoration: none;
   color: #ffffff;
-  min-width: 175px;
+  width: 175px;
   margin-top: 21px;
   margin-left: 1px;
   padding: 0;
@@ -1648,8 +1651,10 @@ body {
 .catalog-group-container {
   background-color: #f0f0f0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
+  min-width: 1160px;
 }
 
 .catalog-products-filter-container {
@@ -2351,6 +2356,7 @@ body {
   transition: all 0.8s ease 0s;
   border: 2px solid #000000;
   border-left: none;
+  z-index: 0;
 }
 
 .navigation-link.navigation-link-compare {
