@@ -801,10 +801,11 @@ body {
   width: 287px;
   min-height: 319px;
   text-align: left;
-  border-right: 7px solid black;
+  border-right: 7px solid #000000;
   margin-top: -17px;
   margin-left: -8px;
-  margin-bottom: 65px;
+  margin-bottom: 55px;
+  position: relative;
 }
 
 .service-link {
@@ -897,9 +898,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 280px;
-  height: 190px;
-  margin: 64px 7px;
-  padding: 0;
+  min-height: 190px;
+  padding: 64px 7px;
+  margin: 0;
+  padding-bottom: 50px;
 }
 
 .service-container-description {
@@ -921,11 +923,11 @@ body {
 
 .service-item {
   position: relative;
-  padding-left: 5px;
   width: 280px;
   min-height: 40px;
   display: flex;
   align-items: center;
+  margin-left:2px;
 }
 
 .service-item-active {
@@ -994,7 +996,8 @@ body {
   min-height: 40px;
   display: flex;
   align-items: center;
-  padding-left: 5px;
+  margin-left:2px;
+  margin-bottom: 15px;
 }
 
 .service-item-credit-block {
@@ -1832,11 +1835,12 @@ body {
 }
 
 .catalog-filter-index-price {
-  margin-left: -50px;
-  margin-bottom: 20px;
+  margin: 0;
+  padding: 0 0 20px 10px;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
+  text-align: left;
 }
 
 .catalog-filter-bluetooth {
@@ -1857,7 +1861,7 @@ body {
 }
 
 .control-input {
-  position: relative;
+  visibility: hidden;
 }
 
 .control-mark {
@@ -2078,6 +2082,7 @@ body {
   grid-template-columns: 1fr 1fr;
   column-gap: 40px;
   align-items: flex-start;
+  min-width: 760px;
 }
 
 .product-card-link {
@@ -2217,19 +2222,6 @@ body {
 .product-card {
   position: relative;
 }
-
-/* .product-card-link:hover::before {
-  width: 360px;
-  content: "";
-  position: absolute;
-  height: 360px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
-  background-color: rgba(240, 240, 240, 0.8);
-} */
 
 .product-card:hover .product-card-link {
   opacity: 0.6;
@@ -2439,7 +2431,7 @@ body {
 }
 
 .sub-navigation-item-list-item-link:focus {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .slider-link:hover::before {
@@ -2557,7 +2549,7 @@ body {
 }
 
 .footer-logo-link:focus {
-  border: 2px solid #af4fff;
+  outline: 2px solid #af4fff;
 }
 
 .footer-logo-link {

@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
   <body class="body">
     <header class="header">
@@ -14,6 +16,7 @@
         <ul class="navigation-list">
           <li class="navigation-item-hidden header-search">
             <form class="navigation-form" action="https://echo.htmlacademy.ru/" method="get">
+              <label class="visually-hidden">Поиск по сайту</label>
               <input class="search" type="search" placeholder="Поиск по сайту">
               <button class="navigation-button" type="submit">Найти</button>
             </form>
@@ -283,8 +286,10 @@
           <div class="service-container">
             <ul class="service">
               <li class="service-item-active"><a class="service-link-active" href="#">Доставка</a></li>
-              <li class="service-item"><a class="service-link" href="#">Гарантия</a></li>
-              <li class="service-item-credit"><a class="service-link-credit" href="#">Кредит</a></li>
+              <li class="service-item"><a class="service-link" href="#">Гарантия
+              </a></li>
+              <li class="service-item-credit"><a class="service-link-credit" href="#">Кредит
+              </a></li>
             </ul>
           </div>
           <div class="service-container-description">
@@ -316,6 +321,7 @@
       <div class="page-container">
         <section class="order">
           <div class="order-container">
+            <h2 class="visually-hidden">Доставим редкий товар под заказ</h2>
             <button class="order-title" type="button">
               <svg class="navigation-button-icon" aria-hidden="true" focusable="false" width="47" height="31"
                 fill="none" xmlns="http://www.w3.org/2000/svg">
