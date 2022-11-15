@@ -17,7 +17,7 @@
           <li class="navigation-item-hidden header-search">
             <form class="navigation-form" action="https://echo.htmlacademy.ru/" method="get">
               <label for="search">
-              <input class="search" type="search" placeholder="Текст поиска">
+              <input class="search" type="search" placeholder="Текст поиска" id="search">
               </label>
               <button class="navigation-button" type="submit">Найти</button>
             </form>
@@ -117,11 +117,11 @@
                   </div>
                 </div>
                 <div class="range-wrapper-inputs">
-                  <label class="catalog-filter-label">от
-                    <input class="range-input first" type="number" value="0" name="min-price">
+                  <label class="catalog-filter-label" for="catalog-number">от
+                    <input class="range-input first" type="number" value="0" name="min-price" id="catalog-number">
                   </label>
-                  <label class="catalog-filter-label last">до
-                    <input class="range-input" type="number" value="5000" name="min-price">
+                  <label class="catalog-filter-label last" for="catalog-filter">до
+                    <input class="range-input" type="number" value="5000" name="min-price" id="catalog-filter">
                   </label>
                 </div>
               </div>
@@ -130,28 +130,28 @@
               <legend class="catalog-filter-index">Цвет</legend>
               <ul class="catalog-filter-list-colors">
                 <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="black" checked><span
+                  <label class="control" for="catalog-control">
+                    <input class="visually-hidden control-input" type="checkbox" name="black" id="catalog-control" checked><span
                       class="control-mark"></span><span class="control-label">Черный</span></label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="white" checked><span
+                  <label class="control" for="control-mark">
+                    <input class="visually-hidden control-input" type="checkbox" name="white" id="control-mark" checked><span
                       class="control-mark"></span>Белый</label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="blue" disabled><span
+                  <label class="control" for="control-catalog">
+                    <input class="visually-hidden control-input" type="checkbox" name="blue" id="control-catalog" disabled><span
                       class="control-mark"></span>Синий</label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="red" disabled><span
+                  <label class="control" for="control-color">
+                    <input class="visually-hidden control-input" type="checkbox" name="red" id="control-color" disabled><span
                       class="control-mark"></span>Красный</label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="pink" disabled><span
+                  <label class="control" for="control-catalog">
+                    <input class="visually-hidden control-input" type="checkbox" name="pink" id="control-catalog" disabled><span
                       class="control-mark"></span>Розовый</label>
                 </li>
               </ul>
@@ -160,14 +160,14 @@
               <legend class="catalog-filter-bluetooth">Bluetooth</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item-yes">
-                  <label class="control">
-                    <input class="visually-hidden control-input-radio" type="radio" name="radio-button" value="Есть"
+                  <label class="control" for="catalog-radio-mark">
+                    <input class="visually-hidden control-input-radio" type="radio" name="radio-button" value="Есть" id="catalog-radio-mark"
                       checked><span class="control-mark-radio"></span>Есть</label>
                 </li>
                 <li class="catalog-filter-item">
-                  <label class="control">
+                  <label class="control" for="radio">
                     <input class="visually-hidden control-input-radio" type="radio" name="radio-button"
-                      value="Нет" disabled><span class="control-mark-radio"></span>Нет</label>
+                      value="Нет" id="radio" disabled><span class="control-mark-radio"></span>Нет</label>
                 </li>
               </ul>
             </fieldset>
