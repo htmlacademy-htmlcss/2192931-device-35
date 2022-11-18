@@ -69,11 +69,17 @@ body {
 .header {
   position: relative;
   color: #000000;
-  background-color: #ffe17f;
-  max-width: 1160px;
-  width: 100%;
+  min-width: 1160px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 20px;
+  padding: 0 140px;
+}
+
+.header-container {
+  background: linear-gradient(to bottom, #ffffff 0, #ffffff 20px, #ffe17f 20px, #ffe17f 100%);
+  width: 1160px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .logo {
@@ -83,7 +89,7 @@ body {
 
 /*navigation*/
 .navigation {
-  padding: 0 60px;
+  padding: 0 60px 20px;
 }
 
 .navigation-form {
@@ -265,7 +271,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   padding: 0;
   line-height: 21px;
   font-weight: 800;
@@ -411,9 +417,9 @@ body {
 }
 
 .page-container {
-  max-width: 1160px;
-  width: 100%;
+  min-width: 1160px;
   margin: 0 auto;
+  padding: 0 140px;
 }
 
 .page-container-services {
@@ -431,6 +437,8 @@ body {
 }
 
 .slider {
+  width: 1160px;
+  margin: 0 auto;
   background: linear-gradient(to bottom, #ffe17f 0, #ffe17f 113px, #ffffff 40px, #ffffff 100%);
   position: relative;
 }
@@ -673,7 +681,8 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  min-width: 1160px;
+  width: 1160px;
+  margin: 0 auto;
   min-height: 253px;
 }
 
@@ -774,6 +783,9 @@ body {
 
 /*services*/
 .services {
+  min-width: 1440px;
+  margin: 0 auto;
+  padding: 0 140px;
   background-color: #f0f0f0;
   font-style: normal;
   font-weight: 800;
@@ -1085,6 +1097,7 @@ body {
 
 /*aboutus*/
 .information-container {
+  margin: 0 auto;
   margin-top: 67px;
   min-height: 545px;
   display: flex;
@@ -1305,8 +1318,11 @@ body {
 
 /*form*/
 .newsletter-form {
+  min-width: 1440px;
   min-height: 421px;
+  margin: 0 auto;
   margin-top: 55px;
+  padding: 0 140px;
   text-align: left;
   background-color: #f0f0f0;
   font-family: "rubik", sans-serif;
@@ -1413,6 +1429,10 @@ body {
 
 /*footer*/
 .page-footer {
+  min-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 140px;
   font-family: "rubik", sans-serif;
   background-color: #444444;
   color: #ffffff;
@@ -1420,6 +1440,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   min-height: 321px;
+  box-sizing: border-box;
 }
 
 .page-footer-container {
@@ -1427,8 +1448,7 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  max-width: 1160px;
-  width: 100%;
+  width: 1160px;
   margin: 0 auto;
 }
 
@@ -1580,6 +1600,9 @@ body {
   font-size: 16px;
   line-height: 20px;
   padding: 0 58px 37px 58px;
+  width: 1160px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .breadcrumbs-list {
@@ -1639,6 +1662,9 @@ body {
 }
 
 .catalog-group-container {
+  min-width: 1160px;
+  margin: 0 auto;
+  padding: 0 140px;
   background-color: #f0f0f0;
 }
 
@@ -2333,7 +2359,6 @@ body {
   max-width: max-content;
   display: flex;
   margin-left: 60px;
-  margin-top: -20px;
 }
 
 .navigation-button {

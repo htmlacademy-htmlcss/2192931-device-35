@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
@@ -10,82 +9,84 @@
   </head>
   <body class="body">
     <header class="header">
-      <a class="logo-link" href="index.html"><img class="logo" src="images/logo/logo.svg" width="145" height="36"
-          alt="Логотип «DEVICE»."></a>
-      <!-- Navigation -->
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item-hidden header-search">
-            <form class="navigation-form" action="https://echo.htmlacademy.ru/" method="get">
-              <label for="search">
-                <input class="search" type="search" placeholder="Текст поиска" id="search">
-              </label>
-              <button class="navigation-button" type="submit">Найти</button>
-            </form>
-          </li>
-          <li class="navigation-item-name">
-            <a class="navigation-link navigation-link-name" href="#">
-              Коля Петухов</a>
-          </li>
-          <li class="navigation-item-out">
-            <a class="navigation-link navigation-link-out" href="#"> Выйти</a>
-          </li>
-          <li class="navigation-item-compare-catalog">
-            <a class="navigation-link navigation-link-compare-catalog" href="#">
-              Сравнить</a>
-          </li>
-          <li class="navigation-item-basket">
-            <a class="navigation-link navigation-link-basket" href="#">
-              <span class="counter-basket">2</span>Корзина</a>
-          </li>
-        </ul>
-        <ul class="navigation-list-user">
-          <li class="navigation-item">
-            <a href="#" class="navigation-catalog-link-user menu-btn">Каталог товаров</a>
-            <ul class="sub-navigation">
-              <li class="sub-navigation-item">
-                <ul class="sub-navigation-item-list">
-                  <li class="sub-navigation-item-list-item">
-                    <a class="sub-navigation-item-list-item-link" href="#">Виртуальная реальность</a>
-                  </li>
-                  <li class="sub-navigation-item">
-                    <a class="sub-navigation-item-list-item-link" href="#">Моноподы для cелфи</a>
-                  </li>
-                  <li class="sub-navigation-item-list-item">
-                    <a class="sub-navigation-item-list-item-link" href="#">Экшн-камеры</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="sub-navigation-item-list-item">
-                <ul class="navigation-catalog">
-                  <li class="sub-navigation-item-list-item">
-                    <a class="sub-navigation-item-list-item-link" href="#">Фитнес-браслеты</a>
-                  </li>
-                  <li class="sub-navigation-item-list-item">
-                    <a class="sub-navigation-item-list-item-link" href="#">Умные часы</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="sub-navigation-item-list-item">
-                <ul class="sub-navigation-catalog">
-                  <li class="sub-navigation-item-list-item">
-                    <a class="sub-navigation-item-list-item-link" href="#">Квадрокоптеры</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li class="navigation-item">
-            <a href="#" class="navigation-catalog-link">Доставка</a>
-          </li>
-          <li class="navigation-item">
-            <a href="#" class="navigation-catalog-link">Гарантия</a>
-          </li>
-          <li class="navigation-item">
-            <a href="#" class="navigation-catalog-link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header-container">
+        <a class="logo-link" href="index.html"><img class="logo" src="images/logo/logo.svg" width="145" height="36"
+            alt="Логотип «DEVICE»."></a>
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item-hidden header-search">
+              <form class="navigation-form" action="https://echo.htmlacademy.ru/" method="get">
+                <label for="search">
+                  <input class="search" type="search" placeholder="Текст поиска" id="search">
+                  <span class="visually-hidden">Поле поиска</span>
+                </label>
+                <button class="navigation-button" type="submit">Найти</button>
+              </form>
+            </li>
+            <li class="navigation-item-name">
+              <a class="navigation-link navigation-link-name" href="#">
+                Коля Петухов</a>
+            </li>
+            <li class="navigation-item-out">
+              <a class="navigation-link navigation-link-out" href="#"> Выйти</a>
+            </li>
+            <li class="navigation-item-compare-catalog">
+              <a class="navigation-link navigation-link-compare-catalog" href="#">
+                Сравнить</a>
+            </li>
+            <li class="navigation-item-basket">
+              <a class="navigation-link navigation-link-basket" href="#">
+                <span class="counter-basket">2</span>Корзина</a>
+            </li>
+          </ul>
+          <ul class="navigation-list-user">
+            <li class="navigation-item">
+              <a href="#" class="navigation-catalog-link-user menu-btn">Каталог товаров</a>
+              <ul class="sub-navigation">
+                <li class="sub-navigation-item">
+                  <ul class="sub-navigation-item-list">
+                    <li class="sub-navigation-item-list-item">
+                      <a class="sub-navigation-item-list-item-link" href="#">Виртуальная реальность</a>
+                    </li>
+                    <li class="sub-navigation-item">
+                      <a class="sub-navigation-item-list-item-link" href="#">Моноподы для cелфи</a>
+                    </li>
+                    <li class="sub-navigation-item-list-item">
+                      <a class="sub-navigation-item-list-item-link" href="#">Экшн-камеры</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sub-navigation-item-list-item">
+                  <ul class="navigation-catalog">
+                    <li class="sub-navigation-item-list-item">
+                      <a class="sub-navigation-item-list-item-link" href="#">Фитнес-браслеты</a>
+                    </li>
+                    <li class="sub-navigation-item-list-item">
+                      <a class="sub-navigation-item-list-item-link" href="#">Умные часы</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sub-navigation-item-list-item">
+                  <ul class="sub-navigation-catalog">
+                    <li class="sub-navigation-item-list-item">
+                      <a class="sub-navigation-item-list-item-link" href="#">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-catalog-link">Доставка</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-catalog-link">Гарантия</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-catalog-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main-container main-index">
       <div class="page-container">
@@ -271,7 +272,7 @@
       <div class="page-footer-container">
         <section class="footer-contacts">
           <div class="footer-contacts-container">
-            <h2 class="visually-hidden">Контакты</h2>
+            <h2 class="visually-hidden">Наши контакты</h2>
             <a class="footer-logo-link" href="index.html"><img class="footer-contacts-logo"
                 src="images/logo/logo-yellow.svg" width="145" height="36" alt="Логотип «DEVICE»."></a>
             <address class="footer-address">
@@ -281,6 +282,7 @@
           </div>
         </section>
         <section class="footer-prices">
+          <h2 class="visually-hidden">Навигация в подвале.</h2>
           <ul class="footer-prices-list">
             <li class="footer-prices-item">
               <a class="footer-prices-link" href="#">Доставка</a>
@@ -308,6 +310,7 @@
           </ul>
         </section>
         <section class="footer-contacts-user">
+          <h2 class="visually-hidden">Контактные данные.</h2>
           <ul class="footer-contacts-user-list">
             <li class="footer-contacts-user-item">
               <a class="footer-contacts-address-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
