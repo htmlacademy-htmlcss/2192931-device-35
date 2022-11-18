@@ -2402,7 +2402,7 @@ body {
 .search::-webkit-inner-spin-button,
 .search::-webkit-inner-spin-button,
 .search::-webkit-clear-button {
-  -webkit-appearance: none;
+  appearance: none;
   margin: 0;
 }
 
