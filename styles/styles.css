@@ -3135,7 +3135,7 @@ body {
 
 .modal-form-text-title {
   width: 190px;
-  height: 20px;
+  display:block;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
